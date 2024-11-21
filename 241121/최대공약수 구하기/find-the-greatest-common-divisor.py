@@ -2,7 +2,7 @@ num = list(map(int,input().split()))
 
 def find(n,m):
     answer = 1
-    for i in range(1, min(num)):
+    for i in range(1, min(num)+1):
         if num[0] % i == 0 and num[1] % i == 0:
             answer = i
     print(answer)
