@@ -22,7 +22,7 @@ def check_date(y, m, d):
     date_lst = [31,28,31,30,31,30,31,31,30,31,30,31]
     if check_year(y): #윤년
         date_lst[1] = 29
-    if date_lst[m] >= d:
+    if date_lst[m-1] >= d:
         check_season(m)
     else:
         print("-1")
