@@ -5,7 +5,7 @@ def check_double(_str):
             lst.append(i)
         if len(lst) >= 2:
             return "Yes"
-        return "No"
+    return "No"
 
 _str = input()
 print(check_double(_str))
