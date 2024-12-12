@@ -3,4 +3,5 @@ def print_start(num):
         print_start(num -1)
         print("*" * num)
 
-print_start(5)
+num = int(input())
+print_start(num)
