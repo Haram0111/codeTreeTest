@@ -8,12 +8,3 @@ def function(n, ans):
 
 n = int(input())
 print(function(n, 0))
-
-# 3 0
-# 10 1
-# 5 2
-# 16 3
-# 8 4
-# 4 5
-# 2 6
-# 1 7
