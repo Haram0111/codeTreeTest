@@ -17,6 +17,7 @@ class User:
         self.city = city
 
 lst_user = [User(name[i], street_address[i], region[i]) for i in range(n)]
-print("name", lst_user[2].name)
-print("addr", lst_user[2].address)
-print("city", lst_user[2].city)
+lst_user.sort(key=lambda user: user.name)
+print("name", lst_user[-1].name)
+print("addr", lst_user[-1].address)
+print("city", lst_user[-1].city)
