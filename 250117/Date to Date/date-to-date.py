@@ -5,6 +5,9 @@ num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 answer = 0
 for i in range(m1+1, m2):
     answer += num_of_days[i]
-answer += d2
-answer += (num_of_days[m1] - d1 + 1)
+if m1 != m2:
+    answer += d2
+    answer += (num_of_days[m1] - d1 + 1)
+else:
+    answer += d2 - d1 + 1
 print(answer)
