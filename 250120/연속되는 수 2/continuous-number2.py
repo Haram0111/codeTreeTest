@@ -5,11 +5,14 @@ arr = [int(input()) for _ in range(n)]
 answer = 0
 pre = 1
 for i in range(n):
+    #print(pre)
     if i != 0:
         if arr[i-1] == arr[i]:
             pre += 1
         else:
             if pre > answer:
                 answer = pre
-                pre = 0
+                pre = 1
+if pre > answer:
+    answer = pre
 print(answer)
