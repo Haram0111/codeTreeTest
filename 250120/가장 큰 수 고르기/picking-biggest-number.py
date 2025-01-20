@@ -1,2 +1,6 @@
 lst = list(map(int,input().split(" ")))
-print(max(lst))
+max_num = lst[0]
+for i in lst:
+    if i > max_num:
+        max_num = i
+print(max_num)
