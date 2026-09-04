@@ -1,3 +1,3 @@
-N, M = tuple(input().split(" "))
+N, M = map(int,input().split(" "))
 lst = list(map(int,input().split(" ")))
 print(lst.count(int(M)))
